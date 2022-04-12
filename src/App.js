@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import ItemList from "./components/ItemList";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ListItem from "./components/ListItem";
+import TopBar from "./components/TopBar";
 
-function App() {
+export default function App({ defaultList = [] }) {
+  const [list, setList] = useState(defaultList);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <TopBar />
+      <main>
+        <Routes>
+          <Route
+            path="/"
+            element={<ItemList list={list} setList={setList} />}
+          />
+          <Route
+            path="/add"
+            element={<ListItem list={list} setList={setList} />}
+          />
+          <Route
+            path="/edit/:item"
+            element={<ListItem list={list} setList={setList} />}
+          />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
-
-export default App;

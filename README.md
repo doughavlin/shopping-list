@@ -1,7 +1,13 @@
-# Getting Started with Create React App
+# Shopping List App
+This App allows you to add shopping list items to keep track of what you need to get at the store. There is a name, description, quantity and after an item has been added, you can mark it as purchased.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+There are some parts of the code where I am inconsistent on purpose, this is to illustrate that there are many ways to achieve success and I wanted to demonstrate several ways.
 
+After adding items to the list you can edit or delete them. There are some minor validation checks, and an error object to display which elements need to be completed. 
+
+The tests are fairly shallow but check to make sure the list is displayed and also if the initial button is displayed. There are lots more ways to test each of the components.
+
+The styles might not be pixel perfect in all cases, but I tried to make the app look clean and modern with minimal overrides to the mui components. 
 ## Available Scripts
 
 In the project directory, you can run:
@@ -38,33 +44,3 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
