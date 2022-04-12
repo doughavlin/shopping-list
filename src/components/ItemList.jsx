@@ -11,7 +11,6 @@ import {
 } from "@material-ui/core";
 
 import { Box, Card, CardContent, Checkbox, Grid } from "@mui/material";
-import { Edit, Delete } from "@material-ui/icons";
 import { Link } from "react-router-dom";
 import DeleteDialog from "./DeleteDialog";
 import { useStyles } from "../styles";
@@ -97,14 +96,14 @@ const ItemList = ({ list, setList }) => {
                       component={Link}
                       to={`/edit/${index}`}
                     >
-                      <Edit />
+                      <div className="material-icons">edit</div>
                     </IconButton>
                     <IconButton
                       edge="end"
                       aria-label="delete"
                       onClick={() => handleDelete(index)}
                     >
-                      <Delete />
+                      <div className="material-icons">delete</div>
                     </IconButton>
                   </ListItemSecondaryAction>
                 </ListItem>

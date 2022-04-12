@@ -17,7 +17,7 @@ const TopBar = () => {
         <Typography
           variant="h6"
           component="div"
-          sx={{ flexGrow: 1, textTransform: "uppercase" }}
+          sx={{ flexGrow: 1, textTransform: "uppercase", fontFamily: "Dosis" }}
         >
           Shopping List
         </Typography>
