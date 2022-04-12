@@ -10,6 +10,7 @@ export const useStyles = makeStyles((theme) => ({
   addButton: {
     background: "#1871e8",
     color: "#fff!important",
+    fontFamily: "Nunito",
   },
   addButtonList: {
     background: "#1871e8",
